@@ -1,0 +1,65 @@
+load - balancing , http caching , reverse proxy
+
+
+client <-------->
+client <-------->  VPN <----------> Server          This is forward proxy where server doesn't know from where th
+client <-------->
+
+
+this is forward proxy where server doesn't know from where the request is coming as vpn is there
+
+
+
+reverse to it --- reverse proxy 
+
+		     <---------> server
+client ------  nginx <---------> server
+		     <---------> server
+
+the client requests and doesn't know to which server is processing the request 
+we can set which type of request where to go 
+many parameters are set in nginx
+
+
+
+method to run --- 
+	install directly
+
+	2>
+		docker run -it -p 8000:X img_name
+		
+		install nginx
+
+		now try to configure nginx
+
+		events{}   and http{server{}   server{}  .......}
+
+
+		http
+		{
+			server {
+				root ----;
+				listen X
+				server_name abc;
+				location /{
+					return 200/404  "data";		
+					}	
+				}
+		}		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
